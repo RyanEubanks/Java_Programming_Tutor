@@ -76,22 +76,27 @@ For detailed information and tutorials on each of these topics, refer to the cor
 
 ## Contributors
 
-<h3> Ryan: </h3>
-<a href="https://github.com/RyanCantCode">
-  <img src="https://avatars.githubusercontent.com/u/74330824?v=4">
-</a>
+<table>
+  <tr>
+    <th>Ryan</th>
+    <th><a href="https://github.com/RyanCantCode">
+    <img src="https://avatars.githubusercontent.com/u/74330824?v=4" alt="Ryan's Avatar"></a></th>
+  </tr>
+  <tr>
+    <td>Kris</td>
+    <td><a href="https://github.com/Kmcanally">
+    <img src="https://avatars.githubusercontent.com/u/91687561?v=4" alt="Kris's Avatar"></a></td>
+  </tr>
+  <tr>
+    <td>Shelby</td>
+    <td><a href="https://github.com/sboswell5">
+    <img src="https://avatars.githubusercontent.com/u/125997983?v=4" alt="Shelby's Avatar"></a></td>
+  </tr>
+  <tr>
+    <td>Will</td>
+    <td><a href="https://github.com/whughes3">
+    <img src="https://avatars.githubusercontent.com/u/147770705?v=4" alt="Will's Avatar"></a></td>
+  </tr>
+</table>
 
-<h3> Kris: </h3>
-<a href="https://github.com/Kmcanally">
-  <img src="https://avatars.githubusercontent.com/u/91687561?v=4">
-</a>
-
-<h3> Shelby: </h3>
-<a href="https://github.com/sboswell5">
-  <img src="https://avatars.githubusercontent.com/u/125997983?v=4">
-</a>
-
-<h3> Will: </h3>
-<a href="https://github.com/whughes3">
-  <img src="https://avatars.githubusercontent.com/u/147770705?v=4">
-</a>
+---
