@@ -8,11 +8,11 @@ public class JavaLearning {
       displayMenu();
 
    }
-   
+
 public static void displayMenu(){
 
-System.out.println("Let's learn about Java! \n View the menu below and make a selection using the corresponding number: \n");
-System.out.println("1. Lists \n 2. Sets \n 3. Queues");
+System.out.println("Let's learn about Java! \nView the menu below and make a selection using the corresponding number: \n");
+System.out.println("1. Lists \n2. Sets \n3. Queues");
 
 Scanner input = new Scanner(System.in);
 int menuChoice = input.nextInt();
@@ -53,7 +53,7 @@ input.close();
 public static void listsJava(){
 
    System.out.println("You'd like to learn more about lists in Java! Let's begin. Please make a selection from the menu: ");
-   System.out.println("1. General Purpose of Lists \n 2. Different Types of Lists in Java \n 3. Examples of Lists in Java \n 4. Test Your Knowledge");
+   System.out.println("1. General Purpose of Lists \n2. Different Types of Lists in Java \n3. Examples of Lists in Java \n4. Test Your Knowledge");
 
    Scanner input = new Scanner(System.in);
    int menuChoice = input.nextInt();
