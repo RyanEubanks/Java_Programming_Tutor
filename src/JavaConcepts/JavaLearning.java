@@ -53,6 +53,7 @@ public class JavaLearning {
          System.out.println("Your selection is invalid. Try again:");
          displayMenu();
 
+         input.close();
       }  
 
       
@@ -60,11 +61,9 @@ public class JavaLearning {
    
    }
 
-
-   
-  
-
-      
 }
+
+
+
 
 
