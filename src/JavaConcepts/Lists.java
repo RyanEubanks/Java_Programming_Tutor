@@ -9,7 +9,7 @@ public class Lists {
 
         System.out.println("You'd like to learn more about lists in Java! Let's begin. Please make a selection from the menu: ");
         System.out.println("1. General Purpose of Lists \n2. Different Types of Lists in Java & Examples \n3. Code Templates \n4. Troubleshooting\n5. Advanced Applications" +
-        "\n6. Lists Quiz\n7. Hands-On Exercises\n8. Additional Resources and Links  \n\nEnter 9 to exit the Lists Menu\n");
+        "\n6. Hands-On Exercises\n7. Additional Resources and Links  \n\nEnter 8 to exit the Lists Menu\n");
 
         Scanner input = new Scanner(System.in);
         int menuChoice = input.nextInt();
@@ -35,19 +35,15 @@ public class Lists {
             advancedApplicationsLists();
             break;
 
-            case 6:
-            quizLists();
-            break;
-
-            case 7: 
+            case 6: 
             exercisesLists();
             break;
 
-            case 8: 
+            case 7: 
             resourcesLists();
             break;
 
-            case 9:
+            case 8:
             JavaLearning.displayMenu();
             break;
 
@@ -91,7 +87,9 @@ public class Lists {
 
         System.out.println("\n\nLists are a type of data structure that can store a collection of elements! \nLists are part of the Java Collections Framework, " +
         "which provides to the user a set of classes and interfaces working with collections of objects. \nThe most common types of lists used in Java are ArrayLists, " +
-        "followed by LinkedLists, but there are more, like Vector Lists, Boolean Lists, and Stacks. \nSelect 2 in the Lists Menu to learn more about the different types of lists in Java! \n");
+        "followed by LinkedLists, but there are more, like Vector Lists, and Stacks. Wrapper classes can also be used to create more specialized types of lists in Java!\n " +
+        "For example, if you wanted to create a list containing only boolean values, you could do something like this: \n\nList<Boolean> booleanList = new ArrayList<>();\n\n" +
+        "Select 2 in the Lists Menu to learn more about the different types of lists in Java! \n");
         
         returnListMenu();
 
@@ -99,7 +97,51 @@ public class Lists {
 
     public static void typesOfLists(){
 
-        System.out.println("\n\nTypes of Lists in  Java: \n\nThe most popular lists in Java are ArrayLists and LinkedLists.\n");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("You indicated that you'd like to learn more about types of lists in Java. What kind of lists are you interested in? Enter a number from the menu: \n"+
+        "1. ArrayLists\n2. LinkedLists\n3. VectorLists\n4. Stacks\n\nEnter 5 to return to the Lists Menu\n\nEnter 6 to return to the collections menu\n");
+
+        int menuChoice = input.nextInt();
+
+        switch(menuChoice) {
+
+            case 1:
+            arrayLists();
+            break;
+
+            case 2:
+            linkedLists();
+            break;
+
+            case 3:
+            vectorLists();
+            break;
+
+            case 4:
+            stacks();
+            break;
+
+            case 5:
+            returnListMenu();
+            break;
+
+            case 6:
+            JavaLearning.displayMenu();
+            break;
+
+            default: 
+            System.out.println("Your selection was invalid. Please try again: \n");
+            typesOfLists();
+
+
+        }
+            input.close();
+
+    }
+
+    public static void arrayLists(){
+
         System.out.println("\n\nAn ArrayList is a good choice when you need a dynamic, resizable list of elements. It's also good if " + 
         "you're often performing random access operations (accessing these elements by index).\nIt's also a good choice when you don't " +
         "know the size of the array you will need, or you know that you're going to be adding and removing items.\n");
@@ -110,16 +152,78 @@ public class Lists {
         "import java.util.ArrayList;\npublic class UserManagementSystem{\n   public static void main(String[] args) {\n\n     ArrayList<String> userNames = new ArrayList<>();"
         + "\n\n     userNames.add(''John'');\n     userNames.add(''Jane'');\n     userNames.add(''Jackie'');\n     userNames.add(''Joslyn'');\n     userNames.remove(''John'');\n\n\n");
 
+        returnListMenu();
 
+    }
 
-
-        
+    public static void linkedLists(){
 
         System.out.println("\n\nA LinkedList is another type of list in Java.\nUnlike an ArrayList, which is using Arrays to store information, " +
         "a LinkedList is storing each piece of information as a node. \nEach element of a LinkedList is stored on its own, meaning each node will" +
         " have its own memory address and location." +
         "\nThis is different from an ArrayList, which stores all of the elements together contiguously (meaning that it's connected in an unbroken sequence).\nA LinkedList uses more memory overall," +
         " but offers faster deletion of elements, as memory does not need to be shuffled around as it does in an ArrayLists.\n");
+        System.out.println("\n\nA LinkedList is a type of list that organizes elements in a linear order. Unlike ArrayList, " +
+        "it uses a chain of elements, where each element points to the next one. This makes insertion and removal operations efficient.\n");
+        System.out.println("Think of a LinkedList like a chain of connected elements, where each element knows about the next one. " +
+                "This structure makes it easy to add or remove elements anywhere in the chain.\n");
+        System.out.println("Here's a simple example of using a LinkedList to manage a list of fruits:\n\n\n");
+        System.out.println("LinkedList Example:\n\n\n" +
+                "import java.util.LinkedList;\npublic class FruitBasket{\n   public static void main(String[] args) {\n\n" +
+                "     LinkedList<String> fruitBasket = new LinkedList<>();\n\n" +
+                "     fruitBasket.add(''Apple'');\n     fruitBasket.add(''Banana'');\n     fruitBasket.add(''Orange'');\n" +
+                "     fruitBasket.add(''Grapes'');\n     fruitBasket.remove(''Banana'');\n\n" +
+                "     // Print all fruits in the basket\n" +
+                "     for (String fruit : fruitBasket) {\n         System.out.println(fruit);\n     }\n\n\n");
+
+        returnListMenu();
+
+    }
+
+    public static void vectorLists(){
+
+        System.out.println("\n\nA Vector is similar to an ArrayList but is synchronized, making it thread-safe. " +
+            "It extends the Vector class with five operations that allow a vector to be treated as a stack.\n" +
+            "Due to its synchronization overhead, it's generally not recommended unless thread safety is a specific requirement.\n");
+
+        System.out.println("Thread-safe means that the operations on the Vector are atomic and can be safely used in a multithreaded environment. " +
+                "It ensures that multiple threads can access and modify the Vector without causing data corruption or inconsistencies.\n");
+        System.out.println("Synchronization overhead refers to the performance cost associated with ensuring thread safety. " +
+                "In the case of Vector, synchronization is achieved by adding locks to methods, which can introduce some performance overhead. " +
+                "If thread safety is not a critical requirement, using ArrayList might be more efficient in terms of performance.\n");
+
+        System.out.println("Another property of a Vector is that it is resizable, meaning that it can dynamically grow or shrink in size.\n" +
+                "Here's an example of using a Vector for managing a list of products:\n\n\n");
+
+        System.out.println("Vector Example:\n\n\n" +
+                "import java.util.Vector;\npublic class ProductInventory{\n   public static void main(String[] args) {\n\n" +
+                "     Vector<String> productList = new Vector<>();\n\n" +
+                "     productList.add(''T-Shirt'');\n     productList.add(''Blue Jeans'');\n     productList.add(''Bandana'');\n" +
+                "     productList.add(''Loafers'');\n     productList.remove(''Blue Jeans'');\n\n\n");
+
+        returnListMenu();
+
+    }
+
+    public static void stacks(){
+        System.out.println("\n\nA Stack is a Last-In-First-Out (LIFO) data structure, like a stack of plates. " +
+            "The last plate added is the first one to be removed. It has operations like push (to add an element) and pop (to remove the top element).\n");
+        System.out.println("Think of a Stack like a stack of plates. You add a plate on top, and the last plate you added is the first one you take off. " +
+                "This structure is useful for tasks that involve keeping track of the last item added.\n");
+        System.out.println("Here's a simple example of using a Stack to manage a history of web pages visited:\n\n\n");
+        System.out.println("Stack Example:\n\n\n" +
+                "import java.util.Stack;\npublic class WebBrowser{\n   public static void main(String[] args) {\n\n" +
+                "     Stack<String> webHistory = new Stack<>();\n\n" +
+                "     // User visits web pages\n" +
+                "     webHistory.push(''Homepage'');\n     webHistory.push(''SearchResults'');\n" +
+                "     webHistory.push(''ArticlePage'');\n\n" +
+                "     // User goes back to the previous page\n" +
+                "     String currentPage = webHistory.pop();\n\n" +
+                "     // Print the current page\n" +
+                "     System.out.println(''Current Page: '' + currentPage);\n\n" +
+                "     // Peek at the top page without removing it\n" +
+                "     String topPage = webHistory.peek();\n" +
+                "     System.out.println(''Top Page: '' + topPage);\n\n\n");
 
         returnListMenu();
 
@@ -139,12 +243,6 @@ public class Lists {
     public static void advancedApplicationsLists(){
 
         returnListMenu();
-    }
-
-    public static void quizLists(){
-
-        quizLists();
-
     }
 
     public static void exercisesLists(){
