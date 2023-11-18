@@ -149,8 +149,16 @@ public class Lists {
         "and removing objects from it!\n We could use an ArrayList for something like managing Usernames, as shown in the example below: \n\n\n");
 
         System.out.println("ArrayList Example:\n\n\n" +
-        "import java.util.ArrayList;\npublic class UserManagementSystem{\n   public static void main(String[] args) {\n\n     ArrayList<String> userNames = new ArrayList<>();"
-        + "\n\n     userNames.add(''John'');\n     userNames.add(''Jane'');\n     userNames.add(''Jackie'');\n     userNames.add(''Joslyn'');\n     userNames.remove(''John'');\n\n\n");
+        "import java.util.ArrayList;\n" +
+        "public class UserManagementSystem {\n" +
+        "   public static void main(String[] args) {\n\n" +
+        "     ArrayList<String> userNames = new ArrayList<>();\n\n" +
+        "     userNames.add(''John'');\n" +
+        "     userNames.add(''Jane'');\n" +
+        "     userNames.add(''Jackie'');\n" +
+        "     userNames.add(''Joslyn'');\n" +
+        "     userNames.remove(''John'');\n\n" +
+        "}\n}");
 
         returnListMenu();
 
@@ -231,26 +239,147 @@ public class Lists {
 
     public static void codeTemplatesLists(){
 
+         // ArrayList template
+    System.out.println("ArrayList Template:\n\n" +
+    "import java.util.ArrayList;\n" +
+    "public class MyArrayListExample {\n" +
+    "   public static void main(String[] args) {\n\n" +
+    "       ArrayList<String> list = new ArrayList<>();\n" +
+    "       // Add elements\n" +
+    "       list.add(''Element1'');\n" +
+    "       list.add(''Element2'');\n" +
+    "       list.add(''Element3'');\n" +
+    "       // Remove an element\n" +
+    "       list.remove(''Element2'');\n" +
+    "       // Iterate through the list\n" +
+    "       for (String element : list) {\n" +
+    "           System.out.println(element);\n" +
+    "       }\n\n" +
+    "   }\n}\n\n");
+
+// Stack template
+System.out.println("Stack Template:\n\n" +
+    "import java.util.Stack;\n" +
+    "public class MyStackExample {\n" +
+    "   public static void main(String[] args) {\n\n" +
+    "       Stack<String> stack = new Stack<>();\n" +
+    "       // Push elements\n" +
+    "       stack.push(''Element1'');\n" +
+    "       stack.push(''Element2'');\n" +
+    "       stack.push(''Element3'');\n" +
+    "       // Pop the top element\n" +
+    "       String poppedElement = stack.pop();\n" +
+    "       // Print the popped element\n" +
+    "       System.out.println(''Popped Element: '' + poppedElement);\n" +
+    "       // Peek at the top element without removing\n" +
+    "       String topElement = stack.peek();\n" +
+    "       System.out.println(''Top Element: '' + topElement);\n\n" +
+    "   }\n}\n\n");
+
+// LinkedList template
+System.out.println("LinkedList Template:\n\n" +
+    "import java.util.LinkedList;\n" +
+    "public class MyLinkedListExample {\n" +
+    "   public static void main(String[] args) {\n\n" +
+    "       LinkedList<String> linkedList = new LinkedList<>();\n" +
+    "       // Add elements\n" +
+    "       linkedList.add(''Element1'');\n" +
+    "       linkedList.add(''Element2'');\n" +
+    "       linkedList.add(''Element3'');\n" +
+    "       // Remove an element\n" +
+    "       linkedList.remove(''Element2'');\n" +
+    "       // Iterate through the list\n" +
+    "       for (String element : linkedList) {\n" +
+    "           System.out.println(element);\n" +
+    "       }\n\n" +
+    "   }\n}\n\n");
+
+// Vector template
+System.out.println("Vector Template:\n\n" +
+    "import java.util.Vector;\n" +
+    "public class MyVectorExample {\n" +
+    "   public static void main(String[] args) {\n\n" +
+    "       Vector<String> vector = new Vector<>();\n" +
+    "       // Add elements\n" +
+    "       vector.add(''Element1'');\n" +
+    "       vector.add(''Element2'');\n" +
+    "       vector.add(''Element3'');\n" +
+    "       // Remove an element\n" +
+    "       vector.remove(''Element2'');\n" +
+    "       // Iterate through the vector\n" +
+    "       for (String element : vector) {\n" +
+    "           System.out.println(element);\n" +
+    "       }\n\n" +
+    "   }\n}\n\n");
 
         returnListMenu();
     }
 
     public static void troubleshootingLists(){
 
+        System.out.println("ArrayList:\nDid you import the proper class?"+
+        "\n\nDid you misspell any method names>\n\nIs the item you're working"+
+        "with actually exist?");
+    
+
         returnListMenu();
     }
 
     public static void advancedApplicationsLists(){
 
+        System.out.println("Some advanced applications of lists are as follows:"+
+        "\n-Library Management Systems\nMusic Playlist Management\nExpression Evaluation\nShopping Cart System\n");
         returnListMenu();
     }
 
     public static void exercisesLists(){
 
+        System.out.println("Create an ArrayList named shoppingList to store grocery items." +
+        "\nAdd milk, eggs, and bread to the list.\nPrint the list of items."+
+        "Remove bread from the list.\nAdd bananas to the list.\nPrint the list.");
+
+        System.out.println("\n\nCreate a LinkedList named toDoList\n"+
+        "Add ''Read a book'', ''walk dog'', ''wash fruit''"+
+        "to your list.\nNow, remove ''Read a book''\nAdd ''practice Java''" +
+        "\nFinally, print your list. ");
+
+        System.out.println("Create a Vector named movieRatings to store ratings of movies."+
+        "\nAdd ratings for several movies (5, 4, 3, etc.)."+
+        "\nPrint the initial list of movie ratings."+
+        "\nRemove a rating from the list (remove the rating for the second movie)."+
+        "\nAdd a new rating to the list (add a rating for a new movie)."+
+        "\nPrint the final list of movie ratings.");
+
+        System.out.println("Vector List Exercise: Book Inventory\n" +
+        "Create a Vector named bookInventory to store information about books.\n" +
+        "Add details for several books, including title and author.\n" +
+        "Print the initial list of books in the inventory.\n" +
+        "Remove a book from the list (remove the second book).\n" +
+        "Add a new book to the inventory (add a book with a new title and author).\n" +
+        "Print the final list of books in the inventory.\n");
+
+        System.out.println("Stack Exercise: Browser History\n" +
+        "Create a Stack named browserHistory to simulate a browser's page navigation.\n" +
+        "Simulate navigating through web pages by pushing URLs onto the stack.\n" +
+        "Print the initial browser history.\n" +
+        "Navigate back (pop) to the previous page (remove the last URL).\n" +
+        "Navigate forward (push) to a new page (e.g., add a new URL).\n" +
+        "Print the final browser history.\n");
+
+        System.out.println("ArrayList Exercise: Movie Queue\n" +
+        "Create an ArrayList named movieQueue to represent a queue of movies to watch.\n" +
+        "Add several movies to the queue ( 'Inception', 'The Shawshank Redemption', 'The Matrix').\n" +
+        "Print the initial movie queue.\n" +
+        "Remove the first movie from the queue (watch the first movie).\n" +
+        "Add a new movie to the end of the queue (add 'The Dark Knight').\n" +
+        "Print the final movie queue.\n");
+
         exercisesLists();
     }
 
     public static void resourcesLists(){
+
+        System.out.println("Visit javatpoint.com/javalists for more information on lists in Java! :)");
 
         resourcesLists();
 

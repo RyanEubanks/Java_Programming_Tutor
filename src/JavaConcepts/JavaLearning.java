@@ -38,7 +38,7 @@ public class JavaLearning {
 
          case 3:
 
-         Queues.queuesMenu();
+         Queues.queueMenu();
 
          displayMenu();
 
