@@ -375,14 +375,14 @@ public class Lists {
         "Add a new movie to the end of the queue (add 'The Dark Knight').\n" +
         "Print the final movie queue.\n");
 
-        exercisesLists();
+        returnListMenu();
     }
 
     public static void resourcesLists(){
 
         System.out.println("Visit javatpoint.com/javalists for more information on lists in Java! :)");
 
-        resourcesLists();
+        returnListMenu();
 
     }
 
