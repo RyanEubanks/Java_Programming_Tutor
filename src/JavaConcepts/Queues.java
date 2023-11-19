@@ -6,7 +6,7 @@ public class Queues {
     public static void queueMenu(){
 
         System.out.println("You'd like to learn more about queues in Java! Let's begin! Select from the menu");
-        System.out.println("1. General Purpose of Queues\n2. Queue Implementation in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Hands-On Exercises\n7.Resources\n8. Return to the Main Menu\n");
+        System.out.println("1. General Purpose of Queues\n2. Example of a Queue in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Exercises\n7. Resources\n8. Return to the Main Menu\n");
 
         Scanner input = new Scanner(System.in);
         int menuChoice = input.nextInt();
@@ -17,7 +17,7 @@ public class Queues {
                 break;
 
             case 2:
-                queueImplementation();
+                queueExample();
                 break;
 
             case 3:
@@ -91,9 +91,9 @@ public class Queues {
         returnQueueMenu();
     }
 
-    public static void queueImplementation() {
+    public static void queueExample() {
 
-        System.out.println("Here's an example of using a Queue to manage a print job queue:\n\n");
+        System.out.println("This is an example of using a Queue to manage a print job queue:\n\n");
         System.out.println("Queue Example:\n\n" +
                 "import java.util.LinkedList;\n" +
                 "import java.util.Queue;\n\n" +

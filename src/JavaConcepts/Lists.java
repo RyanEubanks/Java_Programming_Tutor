@@ -239,78 +239,97 @@ public class Lists {
 
     public static void codeTemplatesLists(){
 
-         // ArrayList template
-    System.out.println("ArrayList Template:\n\n" +
-    "import java.util.ArrayList;\n" +
-    "public class MyArrayListExample {\n" +
-    "   public static void main(String[] args) {\n\n" +
-    "       ArrayList<String> list = new ArrayList<>();\n" +
-    "       // Add elements\n" +
-    "       list.add(''Element1'');\n" +
-    "       list.add(''Element2'');\n" +
-    "       list.add(''Element3'');\n" +
-    "       // Remove an element\n" +
-    "       list.remove(''Element2'');\n" +
-    "       // Iterate through the list\n" +
-    "       for (String element : list) {\n" +
-    "           System.out.println(element);\n" +
-    "       }\n\n" +
-    "   }\n}\n\n");
+        // ArrayList template
+        System.out.println("ArrayList Template:\n\n" +
+        "import java.util.ArrayList;\n" +
+        "public class MyArrayListExample {\n" +
+        "   public static void main(String[] args) {\n\n" +
+        "       ArrayList<String> list = new ArrayList<>();\n" +
+        "       // Add elements\n" +
+        "       list.add(''Element1'');\n" +
+        "       list.add(''Element2'');\n" +
+        "       list.add(''Element3'');\n" +
+        "       // Remove an element\n" +
+        "       list.remove(''Element2'');\n" +
+        "       // Iterate through the list\n" +
+        "       for (String element : list) {\n" +
+        "           System.out.println(element);\n" +
+        "       }\n\n" +
+        "   }\n}\n\n");
 
-// Stack template
-System.out.println("Stack Template:\n\n" +
-    "import java.util.Stack;\n" +
-    "public class MyStackExample {\n" +
-    "   public static void main(String[] args) {\n\n" +
-    "       Stack<String> stack = new Stack<>();\n" +
-    "       // Push elements\n" +
-    "       stack.push(''Element1'');\n" +
-    "       stack.push(''Element2'');\n" +
-    "       stack.push(''Element3'');\n" +
-    "       // Pop the top element\n" +
-    "       String poppedElement = stack.pop();\n" +
-    "       // Print the popped element\n" +
-    "       System.out.println(''Popped Element: '' + poppedElement);\n" +
-    "       // Peek at the top element without removing\n" +
-    "       String topElement = stack.peek();\n" +
-    "       System.out.println(''Top Element: '' + topElement);\n\n" +
-    "   }\n}\n\n");
 
-// LinkedList template
-System.out.println("LinkedList Template:\n\n" +
-    "import java.util.LinkedList;\n" +
-    "public class MyLinkedListExample {\n" +
-    "   public static void main(String[] args) {\n\n" +
-    "       LinkedList<String> linkedList = new LinkedList<>();\n" +
-    "       // Add elements\n" +
-    "       linkedList.add(''Element1'');\n" +
-    "       linkedList.add(''Element2'');\n" +
-    "       linkedList.add(''Element3'');\n" +
-    "       // Remove an element\n" +
-    "       linkedList.remove(''Element2'');\n" +
-    "       // Iterate through the list\n" +
-    "       for (String element : linkedList) {\n" +
-    "           System.out.println(element);\n" +
-    "       }\n\n" +
-    "   }\n}\n\n");
 
-// Vector template
-System.out.println("Vector Template:\n\n" +
-    "import java.util.Vector;\n" +
-    "public class MyVectorExample {\n" +
-    "   public static void main(String[] args) {\n\n" +
-    "       Vector<String> vector = new Vector<>();\n" +
-    "       // Add elements\n" +
-    "       vector.add(''Element1'');\n" +
-    "       vector.add(''Element2'');\n" +
-    "       vector.add(''Element3'');\n" +
-    "       // Remove an element\n" +
-    "       vector.remove(''Element2'');\n" +
-    "       // Iterate through the vector\n" +
-    "       for (String element : vector) {\n" +
-    "           System.out.println(element);\n" +
-    "       }\n\n" +
-    "   }\n}\n\n");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        // Stack template
+        System.out.println("Stack Template:\n\n" +
+            "import java.util.Stack;\n" +
+            "public class MyStackExample {\n" +
+            "   public static void main(String[] args) {\n\n" +
+            "       Stack<String> stack = new Stack<>();\n" +
+            "       // Push elements\n" +
+            "       stack.push(''Element1'');\n" +
+            "       stack.push(''Element2'');\n" +
+            "       stack.push(''Element3'');\n" +
+            "       // Pop the top element\n" +
+            "       String poppedElement = stack.pop();\n" +
+            "       // Print the popped element\n" +
+            "       System.out.println(''Popped Element: '' + poppedElement);\n" +
+            "       // Peek at the top element without removing\n" +
+            "       String topElement = stack.peek();\n" +
+            "       System.out.println(''Top Element: '' + topElement);\n\n" +
+            "   }\n}\n\n");
+
+        // LinkedList template
+        System.out.println("LinkedList Template:\n\n" +
+            "import java.util.LinkedList;\n" +
+            "public class MyLinkedListExample {\n" +
+            "   public static void main(String[] args) {\n\n" +
+            "       LinkedList<String> linkedList = new LinkedList<>();\n" +
+            "       // Add elements\n" +
+            "       linkedList.add(''Element1'');\n" +
+            "       linkedList.add(''Element2'');\n" +
+            "       linkedList.add(''Element3'');\n" +
+            "       // Remove an element\n" +
+            "       linkedList.remove(''Element2'');\n" +
+            "       // Iterate through the list\n" +
+            "       for (String element : linkedList) {\n" +
+            "           System.out.println(element);\n" +
+            "       }\n\n" +
+            "   }\n}\n\n");
+
+        // Vector template
+        System.out.println("Vector Template:\n\n" +
+            "import java.util.Vector;\n" +
+            "public class MyVectorExample {\n" +
+            "   public static void main(String[] args) {\n\n" +
+            "       Vector<String> vector = new Vector<>();\n" +
+            "       // Add elements\n" +
+            "       vector.add(''Element1'');\n" +
+            "       vector.add(''Element2'');\n" +
+            "       vector.add(''Element3'');\n" +
+            "       // Remove an element\n" +
+            "       vector.remove(''Element2'');\n" +
+            "       // Iterate through the vector\n" +
+            "       for (String element : vector) {\n" +
+            "           System.out.println(element);\n" +
+            "       }\n\n" +
+            "   }\n}\n\n");
 
         returnListMenu();
     }

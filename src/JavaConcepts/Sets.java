@@ -5,7 +5,7 @@ public class Sets {
     public static void setsMenu(){
 
         System.out.println("You'd like to learn more about sets in Java! Let's begin: ");
-        System.out.println("1. General Purpose of Sets\n2. Set Implementation in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Hands-On Exercises\n7. Resources\n8. Return to the Main Menu\n");
+        System.out.println("1. General Purpose of Sets\n2. Example of a Set in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Hands-On Exercises\n7. Resources\n8. Return to the Main Menu\n");
 
         Scanner input = new Scanner(System.in);
         int menuChoice = input.nextInt();
@@ -16,7 +16,7 @@ public class Sets {
                 break;
 
             case 2:
-                setsImplementation();
+                setsExample();
                 break;
 
             case 3:
@@ -88,7 +88,7 @@ public class Sets {
         returnSetsMenu();
     }
 
-    public static void setsImplementation() {
+    public static void setsExample() {
 
         System.out.println("Here's a simple example of using a HashSet to manage a set of unique names:\n\n");
         System.out.println("Set Example:\n\n" +
