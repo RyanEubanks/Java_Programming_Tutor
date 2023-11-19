@@ -6,7 +6,7 @@ public class JavaLearning {
    public static void main(String[] args){
 
       displayMenu();
-     
+   
    }
 
    public static void displayMenu(){

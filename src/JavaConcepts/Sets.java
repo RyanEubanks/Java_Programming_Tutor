@@ -5,7 +5,7 @@ public class Sets {
     public static void setsMenu(){
 
         System.out.println("You'd like to learn more about sets in Java! Let's begin: ");
-        System.out.println("1. General Purpose of Sets\n2. Example of a Set in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Hands-On Exercises\n7. Resources\n8. Return to the Main Menu\n");
+        System.out.println("1. General Purpose of Sets\n2. Example of a Set in Java\n3. Code Templates\n4. Troubleshooting\n5. Advanced Applications\n6. Exercises\n7. Resources\n8. Return to the Main Menu\n");
 
         Scanner input = new Scanner(System.in);
         int menuChoice = input.nextInt();
@@ -81,16 +81,16 @@ public class Sets {
         System.out.println("\n\nA Set is a collection of distinct elements. It does not allow duplicate elements.\n");
         System.out.println("Sets are useful when you want to store multiple items without duplicates, " +
                 "and you don't need to maintain the order of elements.\n");
-        System.out.println("In Java, the Set interface is part of the Java Collections Framework. Common implementations include HashSet, " +
+        System.out.println("In Java, the Set interface is part of the Java Collections Framework. Common forms include HashSet, " +
                 "LinkedHashSet, and TreeSet.\n");
-        System.out.println("To create a Set in Java, you can use:\n\nSet<String> mySet = new HashSet<>();\n");
+        System.out.println("To create a Set in Java, you can use this form:\n\nSet<String> mySet = new HashSet<>();\n");
 
         returnSetsMenu();
     }
 
     public static void setsExample() {
 
-        System.out.println("Here's a simple example of using a HashSet to manage a set of unique names:\n\n");
+        System.out.println("Here's an example of using a HashSet to manage a set of unique names:\n\n");
         System.out.println("Set Example:\n\n" +
                 "import java.util.HashSet;\n" +
                 "import java.util.Set;\n\n" +
@@ -156,9 +156,9 @@ public class Sets {
             public static void exercisesSets() {
         
                 System.out.println("Create a HashSet named uniqueNumbers to store unique integers." +
-                        "\nAdd several integers to the set (e.g., 5, 10, 15)." +
+                        "\nAdd several integers to the set (5, 10, 15)." +
                         "\nPrint the initial set of numbers." +
-                        "\nTry adding a duplicate number (e.g., add 10 again)." +
+                        "\nTry adding a duplicate number (add 10 again)." +
                         "\nPrint the final set of numbers.");
         
                 System.out.println("\n\nCreate a Set named programmingLanguages." +

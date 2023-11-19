@@ -194,7 +194,7 @@ public class Lists {
             "It extends the Vector class with five operations that allow a vector to be treated as a stack.\n" +
             "Due to its synchronization overhead, it's generally not recommended unless thread safety is a specific requirement.\n");
 
-        System.out.println("Thread-safe means that the operations on the Vector are atomic and can be safely used in a multithreaded environment. " +
+        System.out.println("Thread-safe means that the operations on the Vector can be safely used in a multithreaded environment. " +
                 "It ensures that multiple threads can access and modify the Vector without causing data corruption or inconsistencies.\n");
         System.out.println("Synchronization overhead refers to the performance cost associated with ensuring thread safety. " +
                 "In the case of Vector, synchronization is achieved by adding locks to methods, which can introduce some performance overhead. " +
@@ -258,24 +258,6 @@ public class Lists {
         "   }\n}\n\n");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         // Stack template
         System.out.println("Stack Template:\n\n" +
             "import java.util.Stack;\n" +

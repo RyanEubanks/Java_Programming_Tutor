@@ -81,13 +81,12 @@ public class Queues {
     public static void queueInfo() {
 
         System.out.println("\n\nA Queue is a data structure that follows the First-In-First-Out (FIFO) principle. " +
-                "In a queue, the element that is added first is the first one to be removed.\n");
-        System.out.println("Queues are often used in scenarios where elements are processed in the order they arrive. " +
+                "For queues, the element that is added first is the first one to be removed.\n");
+        System.out.println("Queues are sometimes used in scenarios where elements are processed in the order they arrive. " +
                 "For example, in task scheduling, printing queue, etc.\n");
         System.out.println("In Java, the Queue interface is part of the Java Collections Framework. " +
-                "Common implementations include LinkedList and PriorityQueue.\n");
-        System.out.println("To create a Queue in Java, you can use:\n\nQueue<String> myQueue = new LinkedList<>();\n");
-
+                "Common types of queues include LinkedList and PriorityQueue.\n");
+    
         returnQueueMenu();
     }
 
@@ -131,7 +130,7 @@ public class Queues {
                 "       // Print the front element\n" +
                 "       System.out.println(''Front Element: '' + frontElement);\n" +
                 "       // Peek at the front element without removing\n" +
-                "       String peekedElement = myQueue.peek();\n" +
+                "        String peekedElement = myQueue.peek();\n" +
                 "       System.out.println(''Peeked Element: '' + peekedElement);\n\n" +
                 "   }\n}");
 
@@ -157,16 +156,16 @@ public class Queues {
 
     public static void exercisesQueue() {
 
-        System.out.println("Queue Exercise: Print Job Queue\n" +
+        System.out.println("Exercise 1: Print Job Queue\n" +
                 "Create a Queue named printJobQueue to manage a print job queue.\n" +
                 "Add several print jobs (documents) to the queue.\n" +
                 "Print the initial print job queue.\n" +
                 "Process print jobs in the order they arrive (remove and print each job).\n" +
                 "Print the final print job queue.\n");
 
-        System.out.println("Queue Exercise: Task Scheduler\n" +
-                "Create a Queue named taskQueue to simulate a task scheduler.\n" +
-                "Add various tasks to the queue with different priorities.\n" +
+        System.out.println("Exercise 2: Task Scheduler\n" +
+                "Create a Queue named taskQueue to create a task scheduler.\n" +
+                "Add a few tasks to the queue with different priorities (some are more important than others).\n" +
                 "Print the initial task queue.\n" +
                 "Process tasks based on priority (remove and execute each task).\n" +
                 "Print the final task queue.\n");
