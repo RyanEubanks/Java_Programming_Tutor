@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Controller.Main",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
             "name": "SpringController",
             "request": "launch",
             "mainClass": "SpringFramework.SpringController",

@@ -1,0 +1,80 @@
+We are creating a list which will need to be accessed and frequently removing items from the index. Which type of list is the best fit? 
+Linked List
+What class will be imported when choosing to work with an Array List?
+ArrayList
+A stack uses First-In-Last-Out (FILO) data structure, like a stack of plates. True or False.
+False
+The structure of a stack is good for systems where you need to keep track of the last item added to a list, such as in browser history. True or False.
+True
+What does thread safe mean in the context of a list, specifically Vector List? A) The vector can be safely used in a multithreaded environment (correct). B) The vector will experience data corruption. C) The vector can be dynamically sized and resized.
+A
+If thread safety is not a concern, it might be better to use an Array List instead of a Vector List. True or False.
+True
+Linked List is using pointers to reference each piece of information which has its own memory address and location. True or False.
+True
+Which of the following data structures follows the First-In-First-Out principle? 
+Queues
+Queues are often processed in the order that they arrive. True or False.
+True
+A task scheduling system might be an application of which collection?
+Queues
+A set is a collection of multiple elements, which allows duplicate elements. True or False.
+False
+Sets are good options when you want to store multiple items without duplicates. True or False.
+True
+Sets and queues are essentially the same thing, just with slightly different parameters. True or False.
+False
+What was Spring developed for? A) Objects. B) Web Applications. C) Inheritance. D) Easier Polymorphism.
+B
+What does the term "IoC" stand for in the Spring Framework?  
+Inversion of Control
+In Spring, what is a bean? A) A coffee bean. B) An object managed by the Spring IoC container. C) A Java comment. D) A database table.
+B
+Which file format is commonly used for defining beans in the Spring Framework?  
+XML
+What is Dependency Injection (DI) in Spring? A) A Spring annotation. B) A design pattern in Java. C) The process of providing dependencies to a component from an external source. D) Data input. 
+C
+In a Spring application what is the purpose of the DispatcherServlet in Spring MVC? A) Manages database connections. B) Handles user authentication. C) Receives incoming requests and dispatches them to controllers. D) Resolves view names. 
+C
+In Spring MVC, what is the role of a Controller? A) Handles user input, processes requests, and updates the model. B) Renders the presentation layer. C) Manages the flow of the application. D) Resolves logical view names. 
+A
+Which annotation is used to mark a class as a Spring MVC Controller? (Include the @ sign in your answer)
+@Controller
+What does AOP stand for in the Spring Framework? A) Aspect-Oriented Programming. B) Advanced Object Processing. C) Automated Object Proxy. D) Abstract Object Pattern.
+A
+What is a scope of a Spring bean? A) The visibility of a bean in a Spring application. B) The range of values a bean can take. C) The lifecycle and visibility of a bean. D) The size of a bean in memory.
+C
+Which component is responsible for resolving logical view names to actual view implementations in Spring MVC? 
+ViewResolver
+What handles the beans in the Spring Framework? (Use the abbreviation)
+IoC
+What does AOP (Aspect-Oriented Programming) help do? A) Nothing. B) Creates Aspects. C) Separates cross-cutting concerns. D) Changes code behaviors by changing code.
+C
+What makes object creation and lifecycle shift from your application to the Spring container? A) Creating objects. B) UML Diagram. C) React Native. D) IoC (Inversion of Control).
+D
+Which keyword do we use in order to implement interfaces in java?
+Implements
+What concepts do Java Interfaces contain? A) Static Constants and Abstract Methods. B) Only Static Constants. C) Only Abstract Methods. D) None of the above.
+A
+True or false: Interfaces use constructors
+False
+True or False: Interface methods do not have bodies
+True
+An interface is a completely _ class
+Abstract
+What type of Inheritance does Interfaces in java allow for?
+Multiple Inheritance
+Which of the following is a correct way to implement an interface in a class? a) class MyClass extends MyInterface. b) class MyClass implements MyInterface. c) class MyClass implements MyInterface extends AnotherInterface. d) class MyClass extends AnotherClass implements MyInterface.
+B
+What is the primary purpose of interfaces in Java? a) Code reusability. b) Code optimization. c) Achieving multiple inheritance. d) Achieving encapsulation.
+C
+Can an interface extend another interface? a) Yes, using the extends keyword. b) No, interfaces cannot extend other interfaces. c) Only if the other interface is abstract. d) None of the above.
+A
+In Java, can an interface have private methods? a) Yes. b) No. c) Only if final is used. d) None of the above.
+A
+How can a class implement multiple interfaces in Java? a) By using the implements keyword followed by a comma-separated list of interface names. b) By using the extends keyword followed by a comma-separated list of interface names. c) Java does not support multiple interfaces implementation in a single class. d) By using the interface keyword followed by a comma-separated list of interface names.
+A
+How can private methods be accessed within Interfaces in Java ? A) Interfaces can not have private methods. B) Interfaces can only have public methods. C) By using the keyword final. D) By using the keyword static.
+D
+True or False: Interfaces can extend classes in Java?
+False

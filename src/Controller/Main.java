@@ -30,14 +30,15 @@ public class Main {
                     SpringController.main(args);
                     break;
                 case 4:
-
+                    Quiz.quiz();
                     break;
                 case 5:
-                    continue;
+                    System.exit(0);
                 default:
                     System.out.println("Invalid Input");
             }
             
         } while(input != 5);
+        in.close();
     }
 }

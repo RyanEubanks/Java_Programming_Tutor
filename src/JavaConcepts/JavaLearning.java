@@ -1,6 +1,8 @@
 package JavaConcepts;
 import java.util.Scanner;
 
+import Controller.Main;
+
 public class JavaLearning {
     
    public static void main(String[] args){
@@ -45,8 +47,8 @@ public class JavaLearning {
          break;
 
          case 4:
-
-         break;
+            Main.main(null);
+         break;            
 
    
          default:
