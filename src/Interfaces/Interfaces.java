@@ -74,7 +74,6 @@ public class Interfaces {
         "        return \"This is an object with an action and a description.\";\n\n"+
         "    }\n\n"+
         "}\n\n"+
-
         "// Main class\n\n"+
         "public class ShortBasicExample {\n\n"+
         "    public static void main(String[] args) {\n\n"+
