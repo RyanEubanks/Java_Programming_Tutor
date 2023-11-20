@@ -318,7 +318,7 @@ System.out.println("Vector Template:\n\n" +
     public static void troubleshootingLists(){
 
         System.out.println("ArrayList:\nDid you import the proper class?"+
-        "\n\nDid you misspell any method names>\n\nIs the item you're working"+
+        "\n\nDid you misspell any method names>\n\nDoes the item you're working "+
         "with actually exist?");
     
 
@@ -328,7 +328,7 @@ System.out.println("Vector Template:\n\n" +
     public static void advancedApplicationsLists(){
 
         System.out.println("Some advanced applications of lists are as follows:"+
-        "\n-Library Management Systems\nMusic Playlist Management\nExpression Evaluation\nShopping Cart System\n");
+        "\n-Library Management Systems\n-Music Playlist Management\n-Expression Evaluation\n-Shopping Cart System\n");
         returnListMenu();
     }
 

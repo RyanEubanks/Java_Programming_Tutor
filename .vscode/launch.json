@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SpringController",
+            "request": "launch",
+            "mainClass": "SpringFramework.SpringController",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "SpringFramework.Main",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
+            "name": "JavaLearning",
+            "request": "launch",
+            "mainClass": "JavaConcepts.JavaLearning",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
+            "name": "Quiz",
+            "request": "launch",
+            "mainClass": "Quiz.Quiz",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
+            "name": "QuizTester",
+            "request": "launch",
+            "mainClass": "Quiz.QuizTester",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
