@@ -15,7 +15,7 @@ public class Main {
             System.out.println("[2] Interfaces");
             System.out.println("[3] Spring Framework");
             System.out.println("[4] Quiz");
-            System.out.println("[5] Exit");
+            System.out.println("[5] Exit ");
 
             input = in.nextInt();
 
