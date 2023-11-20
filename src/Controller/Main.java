@@ -2,6 +2,7 @@ package Controller;
 import JavaConcepts.*;
 import Quiz.*;
 import SpringFramework.*;
+import Interfaces.*;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +25,7 @@ public class Main {
                     JavaLearning.main(args);
                     break;
                 case 2:
-
+                    Interfaces.interfacesMenu();
                     break;
                 case 3:
                     SpringController.main(args);
