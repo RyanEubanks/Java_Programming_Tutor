@@ -25,13 +25,13 @@ public class Main {
                     JavaLearning.main(args);
                     break;
                 case 2:
-                    Interfaces.interfacesMenu();
+                    InterfacesController.main(args);
                     break;
                 case 3:
                     SpringController.main(args);
                     break;
                 case 4:
-                    Quiz.quiz();
+                    QuizTester.main(args);
                     break;
                 case 5:
                     System.exit(0);

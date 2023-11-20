@@ -2,41 +2,46 @@ package Interfaces;
 
 import java.util.Scanner;
 public class Interfaces {
-    public static void interfacesMenu(){
-        System.out.println("You would like learn about interfaces in Java! Let's start: ");
-        System.out.println("1. Introduction, 2.Key concepts, 3. Code templates, 4. Troubleshooting Guide, 5.Advanced Applications, 6. Hands-on Exercises, 7.Resoruces");
+    public static void interfacesMenu() {
+        int menuChoice;
 
-        Scanner input = new Scanner(System.in);
-        int menuChoice = input.nextInt();
+        do {
+            System.out.println("You would like learn about interfaces in Java! Let's start: ");
+            System.out.println("1. Introduction,\n2. Key concepts,\n3. Code templates,\n4. Troubleshooting Guide,\n5. Advanced Applications,\n6. Hands-on Exercises,\n7. Resoruces,\n8. exit");
 
-        switch(menuChoice){
-            case 1:
-                introductionOfInterfaces();
-                break;
-            case 2:
-                keyConceptsOfInterfaces();
-                break;
-            case 3:
-                codeTemplatesOfInterfaces();
-                break;
-            case 4:
-                troubleshootingOfInterfaces();
-                break;
-            case 5:
-                advancedApplicationsOfInterfaces();
-                break;
-            case 6:
-                handsOnExercisesOfInterfaces();
-                break;
-            case 7:
-                resourcesOfInterfaces();
-                break;
-            default:
-                System.out.println("Invalid input. Please try again!");
-        }
-        input.close();
+            Scanner input = new Scanner(System.in);
+            menuChoice = input.nextInt();
+
+            switch(menuChoice) {
+                case 1:
+                    introductionOfInterfaces();
+                    break;
+                case 2:
+                    keyConceptsOfInterfaces();
+                    break;
+                case 3:
+                    codeTemplatesOfInterfaces();
+                    break;
+                case 4:
+                    troubleshootingOfInterfaces();
+                    break;
+                case 5:
+                    advancedApplicationsOfInterfaces();
+                    break;
+                case 6:
+                    handsOnExercisesOfInterfaces();
+                    break;
+                case 7:
+                    resourcesOfInterfaces();
+                    break;
+                case 8:
+                    continue;
+                default:
+                    System.out.println("Invalid input. Please try again!");
+            }
+        } while(menuChoice != 8);
     }
-    public static void returnSetsMenuOfInterfaces(){
+    public static void returnSetsMenuOfInterfaces() {
         Scanner input = new Scanner(System.in);
      
     }

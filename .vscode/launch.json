@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InterfacesController",
+            "request": "launch",
+            "mainClass": "Interfaces.InterfacesController",
+            "projectName": "Java_Programming_Tutor_c38463b5"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Controller.Main",
