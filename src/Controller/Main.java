@@ -40,6 +40,5 @@ public class Main {
             }
             
         } while(input != 5);
-        in.close();
     }
 }
